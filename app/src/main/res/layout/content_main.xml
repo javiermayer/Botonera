@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <Button
+        android:text="jkhkjh"
+        android:id="@+id/puteadaRandom"
+        android:layout_width="match_parent"
+        android:layout_height="50pt" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:id="@+id/imagen"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#3453c3"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#c33453"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen1"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#53c334"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#a434c3"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#c3a434"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen4"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#34c3a4"
+        android:text="Ordenar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen5"
+        />
+
+
+</LinearLayout>
