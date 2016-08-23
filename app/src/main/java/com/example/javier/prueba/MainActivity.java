@@ -57,14 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            InputStream fraw = getResources().openRawResource(R.raw.sonido1);
-            BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));
-           // linea = brin.readLine();
+            InputStream fraw = getResources().openRawResource(R.raw.sonido1);               //desde aca hasta donde termima la barra es donde esta el error
+            BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));          // no se como mandar el audio que se encuentra en recurosos por el intent , no se que
+           // linea = brin.readLine();                                                      //que uri poner
             Uri uri = Uri.parse(String.valueOf(brin)+".mp3");
 
         final Intent compartiraudio = new Intent(Intent.ACTION_SEND);
         compartiraudio.setType("audio/mp3");
-        compartiraudio.putExtra(Intent.EXTRA_STREAM, uri);
+        compartiraudio.putExtra(Intent.EXTRA_STREAM, uri);                                  // fin del codifo donde creo que tengo el error.
 
 
 
