@@ -57,14 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            InputStream fraw = getResources().openRawResource(R.raw.insul_boludo);
+            InputStream fraw = getResources().openRawResource(R.raw.sonido1);
             BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));
            // linea = brin.readLine();
             Uri uri = Uri.parse(String.valueOf(brin)+".mp3");
-
-
-
-
 
         final Intent compartiraudio = new Intent(Intent.ACTION_SEND);
         compartiraudio.setType("audio/mp3");
@@ -82,40 +78,40 @@ public class MainActivity extends AppCompatActivity {
         Button boton6 = (Button)findViewById(R.id.imagen4);
         Button boton7 = (Button)findViewById(R.id.imagen4);
         Button boton8 = (Button)findViewById(R.id.imagen4);
-        reproductor= MediaPlayer.create(this,R.raw.insul_boludo);
+        reproductor= MediaPlayer.create(this,R.raw.sonido1);
         listaReproductores.add(reproductor);
 
-        reproductor1= MediaPlayer.create(this,R.raw.insul_boludo);
+        reproductor1= MediaPlayer.create(this,R.raw.sonido1);
         listaReproductores.add(reproductor1);
 
-        reproductor2= MediaPlayer.create(this,R.raw.insul_nabo);
+        reproductor2= MediaPlayer.create(this,R.raw.sonido2);
         listaReproductores.add(reproductor2);
 
-        reproductor3= MediaPlayer.create(this,R.raw.insul_boracho);
+        reproductor3= MediaPlayer.create(this,R.raw.sonido3);
         listaReproductores.add(reproductor3);
 
-        reproductor3= MediaPlayer.create(this,R.raw.insul_marmota);
+        reproductor3= MediaPlayer.create(this,R.raw.sonido1);
         listaReproductores.add(reproductor3);
 
-        reproductor4= MediaPlayer.create(this,R.raw.insul_rata);
+        reproductor4= MediaPlayer.create(this,R.raw.sonido2);
         listaReproductores.add(reproductor4);
 
-        reproductor5= MediaPlayer.create(this,R.raw.insul_pancho);
+        reproductor5= MediaPlayer.create(this,R.raw.sonido1);
         listaReproductores.add(reproductor5);
 
-        reproductor6= MediaPlayer.create(this,R.raw.insul_traidor);
+        reproductor6= MediaPlayer.create(this,R.raw.sonido2);
         listaReproductores.add(reproductor6);
 
-        reproductor7= MediaPlayer.create(this,R.raw.es_un_sorete_mal_cagado);
+        reproductor7= MediaPlayer.create(this,R.raw.sonido3);
         listaReproductores.add(reproductor7);
 
-        reproductor8= MediaPlayer.create(this,R.raw.lapqtepario);
+        reproductor8= MediaPlayer.create(this,R.raw.sonido3);
         listaReproductores.add(reproductor8);
 
-        reproductor9= MediaPlayer.create(this,R.raw.pelotudo);
+        reproductor9= MediaPlayer.create(this,R.raw.sonido2);
         listaReproductores.add(reproductor9);
 
-        reproductor10= MediaPlayer.create(this,R.raw.insul_boracho);
+        reproductor10= MediaPlayer.create(this,R.raw.sonido1);
         listaReproductores.add(reproductor10);
 
 
@@ -143,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor1.start();
 
 
@@ -152,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         boton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(),"dale que vaa",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(),"toust",Toast.LENGTH_LONG).show();
                 reproductor2.start();
 
 
@@ -161,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         boton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor3.start();
 
             }
@@ -171,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         boton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor4.start();
 
             }
@@ -181,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         boton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor5.start();
 
             }
@@ -191,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
         boton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor6.start();
 
             }
@@ -201,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
         boton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor7.start();
 
             }
@@ -210,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "dale que vaa", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "toust", Toast.LENGTH_LONG).show();
                 reproductor8.start();
 
             }
@@ -220,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
 
-                startActivity(Intent.createChooser(compartiraudio, "Comparti la puteada con tus amigos"));
+                startActivity(Intent.createChooser(compartiraudio, "comparti co tus amigos"));
 
                 return false;
             }
@@ -229,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
 
-                startActivity(Intent.createChooser(compartiraudio, "Comparti la puteada con tus amigos"));
+                startActivity(Intent.createChooser(compartiraudio, "Comparti con tus amigos"));
 
                 return false;
             }
@@ -238,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
 
-                startActivity(Intent.createChooser(compartiraudio, "Comparti la puteada con tus amigos"));
+                startActivity(Intent.createChooser(compartiraudio, "Comparti con tus amigos"));
 
                 return false;
             }
@@ -247,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
 
-                startActivity(Intent.createChooser(compartiraudio, "Comparti la puteada con tus amigos"));
+                startActivity(Intent.createChooser(compartiraudio, "Comparti con tus amigos"));
 
                 return false;
             }
